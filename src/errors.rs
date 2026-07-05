@@ -4,13 +4,13 @@ use std::fmt;
 
 #[derive(Debug, FromRow)]
 pub struct Book {
-    pub id: i64,
+    pub id: i32,
     pub title: String,
     pub author: String,
     pub genre: String,
-    pub year: Option<i64>,
-    pub read: i64,
-    pub rating: Option<i64>,
+    pub year: Option<i32>,
+    pub read: i32,
+    pub rating: Option<i32>,
 }
 
 #[derive(Error, Debug)]
